@@ -1,0 +1,11 @@
+{
+    "targets": [
+        {"file": "/mnt/d/BSERC_Project/dynamic-enforcer/logs/mock_auth.log", "type": "ssh"},
+        {"file": "/mnt/d/BSERC_Project/dynamic-enforcer/logs/mock_web.log", "type": "web"}
+    ],
+    "signatures": [
+        "Failed password",
+        "../"
+    ],
+    "threshold": 3
+}

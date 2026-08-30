@@ -1,0 +1,14 @@
+[Unit]
+Description=MVD Dynamic Security Enforcer Daemon
+After=network.target
+
+[Service]
+Type=simple
+# The installer script will move our files to these standard OS locations
+ExecStart=/usr/bin/python3 /usr/local/bin/mvd_agent.py
+Restart=on-failure
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
